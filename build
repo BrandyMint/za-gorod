@@ -1,0 +1,1 @@
+sass -I ./bower_components/sass-bootstrap/lib/ -C ./sass/application.sass:./css/application.css

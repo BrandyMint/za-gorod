@@ -1,0 +1,11 @@
+{
+  "name": "Zagorod Design",
+  "version": "0.1",
+  "dependencies": {
+    "bootstrap-sass": "latest",
+  },
+  "ignore": [
+    "**/.*",
+    "components"
+  ]
+}
