@@ -1,2 +1,181 @@
 body
-  margin-top: 60px
+  margin-top: 50px  
+
+.container
+  min-width: 320px
+
+.bgrey
+  color: $bgrey_d
+
+.navbar-inverse
+  opacity: 0.9
+  background-color: $bgreen
+  border-color: $bgreen
+  a
+    color: $bwhite
+
+.navbar-inverse    
+  .nav-pills
+    color: $bwhite
+    li > p
+      padding-top: 15px
+    .glyphicon-earphone
+      margin-left: 15px
+
+.navbar-inverse
+  .navbar-slogan    
+    font:      
+      size: $slogan-size
+      weight: $weight-lite
+    p
+      padding-top: $slogan-padding !important
+  .navbar-brand
+    color: $bwhite
+    font-weight: $weight-bold
+
+.navbar-inverse 
+  .navbar-nav > li > a
+    color: $bwhite    
+  .navbar-right
+    font-weight: $weight-bold  
+  .navbar-toggle
+    border-color: transparent
+    .icon-bar
+      background-color: $bwhite
+      width: 15px
+
+.navbar-inverse      
+  .nav-pills
+    padding-left: 100px
+    .dropdown
+      margin-top: 5px
+  .left-line
+    border-left: 1px solid $bgreen_l
+    height: 30px
+    margin-top: 10px  
+    margin-left: 80px !important
+  .navbar-toggle:hover,
+  .navbar-toggle:focus
+    background-color: $bgreen_d
+
+.navbar-inverse
+  .nav > li > a:hover,
+  .nav > li > a:focus,
+  .nav .open > a,
+  .nav .open > a:hover,
+  .nav .open > a:focus
+    background-color: $bgreen_d
+    color: $bwhite_d !important
+  .nav .caret
+    border-top-color: $bwhite
+    border-bottom-color: $bwhite
+  .nav a:hover .caret,
+  .nav .open > a .caret,
+  .nav .open > a:hover .caret,
+  .nav .open > a:focus .caret
+    border-top-color: $bwhite_d
+    border-bottom-color: $bwhite_d
+
+
+
+
+.index-page-header  
+  background-image: url(../img/mobile-1.png)
+  background-size: cover
+  min-height: 112px 
+  width: 100%
+  top: 50px 
+  position: absolute
+  z-index: -1
+  h1
+    color: $bwhite
+    margin: 45px 0 45px 0
+    font:
+      weight: $weight-bold      
+      size: $slogan-size-center-min
+  @media screen and (min-width: $large-size)
+    top: 0px
+    height: 500px
+    h1
+      margin: 150px 0 45px 0
+      font-size: $slogan-size-center-max
+
+
+
+
+.page-filter
+  background-color: #E5E5E5
+  padding-top: 20px
+  margin-top: 162px
+  label
+    font-weight: 400
+  @media screen and (min-width: $large-size)
+    margin-top: 230px
+    margin-bottom: 200px
+    background-color: transparent
+    label
+      color: $bwhite
+    .btn-lg      
+      padding: 6px 16px
+      font-size: 15px
+      margin-top: 25px
+
+
+
+
+.services
+  p
+    margin: 25px 0 25px 0
+    line-height: 22px
+    font:
+      size: 20px    
+      weight: $weight-bold      
+  padding: 20px 15px 30px 15px
+  .btn
+    margin-top: -10px
+    margin-left: 20%
+    margin-right: 20%
+  .col-xs-12
+    margin-bottom: 5px
+
+.services .transfer, .meat, .celebrity 
+  padding: 25px 0px  
+  height: 195px
+  color: $bwhite
+  text-align: center
+
+.services .transfer
+  background: url("../img/mobile-2.png") no-repeat 0% 0%/cover
+.services .meat
+  background: url("../img/mobile-3.png") no-repeat 0% 0%/cover
+.services .celebrity
+  background: url("../img/mobile-4.png") no-repeat 0% 0%/cover 
+
+
+
+
+.houses-block
+  background-color: $bgrey 
+  .light-h2
+    margin: 30px 0
+  .house-offer
+    @include border-top-radius(4px)
+    @include border-bottom-radius(4px)
+    background-color: $bwhite
+    .img-responsive      
+      @include border-top-radius(4px)
+      @include border-bottom-radius(0px)
+      margin-bottom: 10px
+    .desc
+      margin: 0 15px
+  .house-btn
+    .rline
+      border-right: 1px solid $bgreen_l
+  .more-btn
+    margin: 30px 0  
+  .btn-success
+    margin-top: 10px
+    @include border-top-radius(0px)
+    @include border-bottom-radius(4px)
+
+
