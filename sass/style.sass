@@ -7,6 +7,9 @@ body
 .bgrey
   color: $bgrey_d
 
+.mt6
+  margin-top: 6px
+
 .navbar-inverse
   opacity: 0.9
   background-color: $bgreen
@@ -181,20 +184,48 @@ body
 
 
 
-.catalog-page
-  .page-pre-filter-mobile
-    padding: 15px 15px 5px 15px
+.catalog-page .page-pre-filter-mobile,
+.catalog-page-filter .page-pre-filter-mobile
+  padding: 15px 0 5px 0
 
 .catalog-page
   .houses-block
     padding-top: 30px
 
-.catalog-page
-  .page-filter
-    border-bottom: 1px solid $bgrey_d1
-    background-color: $bgrey_d2
-    margin-bottom: 0px
-    margin-top: 0px
-    padding-bottom: 15px
-    label
-      color: $bfont
+.catalog-page .page-filter,
+.catalog-page-filter .page-filter
+  border-bottom: 1px solid $bgrey_d1
+  background-color: $bgrey_d2
+  margin-bottom: 0px
+  margin-top: 0px
+  padding-bottom: 15px
+  label
+    color: $bfont
+
+.catalog-page-filter
+  .checkbox
+    margin-bottom: 15px
+  .btn-filter
+    margin: 15px 0
+    padding: 10px 0
+
+
+
+input[type="checkbox"]
+  display: none
+
+input[type="checkbox"] + .checkbox span
+  display: inline-block
+  width: 22px
+  height: 22px
+  vertical-align: middle
+  background: url("../img/checkbox1.png") left -41px no-repeat
+  cursor: pointer
+  margin-right: 8px
+
+input[type="checkbox"]:checked + .checkbox span
+  background: url("../img/checkbox1.png") left top no-repeat
+  margin-right: 8px
+
+.checkbox
+  padding-left: 0px  
