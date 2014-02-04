@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>За город!</title>
+    
+    <link href="css/application.css" rel="stylesheet">
+
+</head>
+
+<body class="catalog-page">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">                  
+                    <span class="sr-only">Toggle navigation</span>                    
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">За город!</a>                        
+
+                <ul class="nav nav-pills">                    
+                    <li class="hidden-xs hidden-sm navbar-slogan"><p>ГОСТЕВЫЕ ДОМИКИ В АРЕНДУ</p></li>
+                    <li class="left-line hidden-xs hidden-sm"></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Чебоксары <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>                        
+                      </ul>
+                    </li>
+                    <li class="left-line hidden-xs"></li>                    
+                    <li class="hidden-xs"><p><span class="glyphicon glyphicon-earphone"></span> +7 919 669 80 00</p></li>
+                    <li class="visible-xs"><p><span class="glyphicon glyphicon-earphone"></span></p></li>                    
+                </ul>           
+            </div>
+
+            
+            <div class="collapse navbar-collapse navbar-ex1-collapse">                
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Дома</a>
+                    </li>
+                    <li><a href="#">Транспорт</a>
+                    </li>
+                    <li><a href="#">Еда</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        
+    </nav>
+
+    <section class="page-pre-filter-mobile visible-xs visible-sm">        
+        <div class="row">
+            <div class="col-xs-6">
+                <p class="light-h2">Все дома</p>
+            </div> 
+            <div class="col-xs-6 text-right">
+                <button type="submit" class="btn btn-default"><span class="fontello-icon-list-1"></span> фильтр</button>
+            </div> 
+        </div>         
+    </section>
+
+    <section class="page-filter visible-md visible-lg">
+        <div class="container">                        
+            <div class="row">
+                
+                <form class="col-md-12" role="form">
+                        
+                      <div class="form-group col-md-2">
+                        <div class="row">
+                            <label for="date-in" class="col-xs-2 control-label">Заезд</label>
+                            <div class="col-xs-10 col-md-12">
+                              <input class="form-control" id="date-in" placeholder="29 декабря" type="text">
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="form-group col-md-2">
+                        <div class="row">
+                            <label for="date-out" class="col-xs-2 control-label">Выезд</label>
+                            <div class="col-xs-10 col-md-12">
+                              <input class="form-control" id="date-out" placeholder="30 декабря" type="text">
+                            </div>
+                        </div>
+                      </div>
+
+                        <div class="form-group col-md-1">
+                            <div class="row">
+                               <label for="guest" class="control-label col-xs-2">Гостей</label>
+                                <div class="col-xs-4 col-md-12">
+                                   <select id="guest" class="form-control">
+                                        <option selected="" value="2">2</option>    
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                         </div>
+
+                        <div class="form-group col-md-3">
+                            <div class="row">
+                               <label for="guest" class="control-label col-xs-2">Цена</label>
+                                <div class="col-xs-7 col-md-12">
+                                    <div class="form-inline">                                    
+                                    <label>до</label>                                 
+                                   <div class="form-group">
+                                       <select id="guest" class="form-control">
+                                            <option selected="" value="2">6000</option> 
+                                            <option value="3">7000</option>
+                                            <option value="4">8000</option>
+                                            <option value="5">9000</option>
+                                        </select>
+                                    </div>    
+                                    <label>р./сутки</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                         </div>
+
+                        <div class="form-group col-md-2 col-md-offset-2">
+                            <div class="row">
+                                <div class="col-xs-12 text-right">                                    
+                                  <button type="submit" class="btn btn-default btn-lg">выбрать удобства</button>
+                                </div>
+                            </div>
+                        </div>
+        
+                     
+                </form>
+                        
+            </div>  
+        </div>  <!-- end container-->   
+    </section>
+
+    
+
+    <section class="houses-block">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-xs-12 col-md-4">
+                    <div class="house-offer">                
+                        <img src="img/house-1.png" class="img-responsive" alt="house"> 
+                                                            
+                        <div class="desc">
+                            <p class="size-16px bold">Банный комплекс (всесезонный)</p>                    
+                            <span>На 6 человек</span>
+                            <br>
+                            <span class="size-12px bgrey">База отдыха Golden Fish &nbsp;
+                            <span class="fontello-icon-address bgrey">26 км</span></span>
+                        </div>                        
+                                        
+                        <div class="form-group house-btn">                    
+                          <button type="submit" class="btn btn-success btn-block">
+                             <span class="rline col-xs-5 size-16px">8000 р.</span> 
+                             <span class="size-16px bold col-xs-7">Заказать</span>
+                         </button>
+                        </div>                
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-md-4">
+                    <div class="house-offer">                
+                        <img src="img/house-1.png" class="img-responsive" alt="house"> 
+                                                            
+                        <div class="desc">
+                            <p class="size-16px bold">Банный комплекс (всесезонный)</p>                    
+                            <span>На 6 человек</span>
+                            <br>
+                            <span class="size-12px bgrey">База отдыха Golden Fish &nbsp;
+                            <span class="fontello-icon-address bgrey">26 км</span></span>
+                        </div>                        
+                                        
+                        <div class="form-group house-btn">                    
+                          <button type="submit" class="btn btn-success btn-block">
+                             <span class="rline col-xs-5 size-16px">8000 р.</span> 
+                             <span class="size-16px bold col-xs-7">Заказать</span>
+                         </button>
+                        </div>                
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-md-4">
+                    <div class="house-offer">                
+                        <img src="img/house-1.png" class="img-responsive" alt="house"> 
+                                                            
+                        <div class="desc">
+                            <p class="size-16px bold">Банный комплекс (всесезонный)</p>                    
+                            <span>На 6 человек</span>
+                            <br>
+                            <span class="size-12px bgrey">База отдыха Golden Fish &nbsp;
+                            <span class="fontello-icon-address bgrey">26 км</span></span>
+                        </div>                        
+                                        
+                        <div class="form-group house-btn">                    
+                          <button type="submit" class="btn btn-success btn-block">
+                             <span class="rline col-xs-5 size-16px">8000 р.</span> 
+                             <span class="size-16px bold col-xs-7">Заказать</span>
+                         </button>
+                        </div>                
+                    </div>
+                </div>
+
+            </div>
+
+
+            <a href="#" class="btn btn-default btn-lg btn-block more-btn">Показать ещё</a>      
+
+        </div>
+    </section>
+    
+
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+</body>
+
+</html>
