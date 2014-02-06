@@ -7442,28 +7442,39 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .size-16px {
   font-size: 16px; }
 
+.size-18px {
+  font-size: 18px; }
+
+.size-20px {
+  font-size: 20px; }
+
+.size-25px {
+  font-size: 25px; }
+
 .bold {
   font-weight: 600; }
 
 .size-12px {
   font-size: 12px; }
 
+.size-12px-m {
+  font-size: 12px; }
+  @media screen and (min-width: 768px) {
+    .size-12px-m {
+      font-size: 14px; } }
+
 .light-h2 {
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 300;
   margin-bottom: 15px; }
 
-body {
-  margin-top: 50px; }
+.reg-h2 {
+  font-size: 20px;
+  margin-bottom: 15px; }
 
-.container {
-  min-width: 320px; }
-
-.bgrey {
-  color: #7f7f7f; }
-
-.mt6 {
-  margin-top: 6px; }
+.light-price {
+  font-size: 19px;
+  font-weight: 300; }
 
 .navbar-inverse {
   opacity: 0.9;
@@ -7528,6 +7539,63 @@ body {
   border-top-color: #f2f2f2;
   border-bottom-color: #f2f2f2; }
 
+input[type="checkbox"] {
+  display: none; }
+
+input[type="checkbox"] + .checkbox span {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  background: url("../img/checkbox1.png") left -41px no-repeat;
+  cursor: pointer;
+  margin-right: 8px; }
+
+input[type="checkbox"]:checked + .checkbox span {
+  background: url("../img/checkbox1.png") left top no-repeat;
+  margin-right: 8px; }
+
+.checkbox {
+  padding-left: 0px; }
+
+body {
+  margin-top: 50px; }
+
+.container {
+  min-width: 320px; }
+
+.bgrey {
+  color: #7f7f7f; }
+
+.mt6 {
+  margin-top: 6px; }
+
+.mt15 {
+  margin-top: 15px; }
+
+.mt30 {
+  margin-top: 30px; }
+
+.mb15 {
+  margin-bottom: 15px; }
+
+.mb20 {
+  margin-bottom: 20px; }
+
+.mb30 {
+  margin-bottom: 30px; }
+
+.mb40 {
+  margin-bottom: 40px; }
+
+@media screen and (min-width: 768px) {
+  .pr0 {
+    padding-right: 0; } }
+@media screen and (max-width: 768px) {
+  .mobile-minus {
+    margin-right: -15px;
+    margin-left: -15px; } }
+
 .index-page-header {
   background-image: url(../img/mobile-1.png);
   background-size: cover;
@@ -7581,19 +7649,19 @@ body {
   .services .col-xs-12 {
     margin-bottom: 5px; }
 
-.services .transfer, .meat, .celebrity {
+.transfer, .meat, .celebrity {
   padding: 25px 0px;
   height: 195px;
   color: white;
   text-align: center; }
 
-.services .transfer {
+.transfer {
   background: url("../img/mobile-2.png") no-repeat 0% 0%/cover; }
 
-.services .meat {
+.meat {
   background: url("../img/mobile-3.png") no-repeat 0% 0%/cover; }
 
-.services .celebrity {
+.celebrity {
   background: url("../img/mobile-4.png") no-repeat 0% 0%/cover; }
 
 .houses-block {
@@ -7649,21 +7717,93 @@ body {
   margin: 15px 0;
   padding: 10px 0; }
 
-input[type="checkbox"] {
-  display: none; }
+.zakaz-doma {
+  border-bottom: 1px solid #edf6ea;
+  margin-bottom: 5px; }
+  .zakaz-doma .zakaz {
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: 1px solid #bfdfb3;
+    margin: 8px auto;
+    color: #50b848;
+    padding: 7px 0;
+    text-align: center;
+    font-weight: bold; }
 
-input[type="checkbox"] + .checkbox span {
+.house-main-content ul {
   display: inline-block;
-  width: 22px;
-  height: 22px;
-  vertical-align: middle;
-  background: url("../img/checkbox1.png") left -41px no-repeat;
-  cursor: pointer;
-  margin-right: 8px; }
+  vertical-align: top; }
+.house-main-content li {
+  line-height: 1.7em; }
+.house-main-content .photos {
+  width: 100%; }
+.house-main-content .choise {
+  padding-bottom: 5px; }
+  .house-main-content .choise a {
+    color: #333333; }
+.house-main-content .focused {
+  font-weight: bold;
+  border-bottom: 3px solid #50b848; }
+  .house-main-content .focused a, .house-main-content .focused a:hover, .house-main-content .focused a:visited {
+    color: #50b848; }
 
-input[type="checkbox"]:checked + .checkbox span {
-  background: url("../img/checkbox1.png") left top no-repeat;
-  margin-right: 8px; }
+.right-price {
+  margin: 70px 0 0 30px; }
 
-.checkbox {
-  padding-left: 0px; }
+.buy-form {
+  background-color: #f2f2f2;
+  padding: 20px 15px 15px 15px; }
+  .buy-form label {
+    font-weight: 400; }
+  .buy-form input, .buy-form select {
+    border: none; }
+  @media screen and (min-width: 768px) {
+    .buy-form {
+      padding: 20px 30px 15px 30px;
+      margin-top: 30px;
+      border-top-right-radius: 4px;
+      border-top-left-radius: 4px;
+      border: 1px solid #e5e5e5; } }
+
+.buy-button {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border: 1px solid #e5e5e5; }
+  .buy-button .btn {
+    margin: 15px 0 20px 0;
+    padding: 10px 12px;
+    font-size: 16px;
+    border-bottom: 1px solid #409439; }
+
+.border-grey {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border: 1px solid #e5e5e5;
+  padding: 30px 30px; }
+
+.base-block {
+  padding-top: 30px; }
+  @media screen and (min-width: 768px) {
+    .base-block {
+      padding: 80px 0 50px 0; } }
+
+@media screen and (min-width: 768px) {
+  .transfer-page .transfer,
+  .meat-page .meat {
+    height: 450px; } }
+.transfer-page .transfer p,
+.meat-page .meat p {
+  padding-top: 20px; }
+  @media screen and (min-width: 768px) {
+    .transfer-page .transfer p,
+    .meat-page .meat p {
+      font-size: 36px;
+      padding: 100px 0 20px 0; } }
+
+.transfer-page .right-price,
+.meat-page .right-price {
+  margin: 50px 0 50px 0; }
