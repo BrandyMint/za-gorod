@@ -7,27 +7,20 @@ body
 .bgrey
   color: $bgrey_d
 
-.mt6
-  margin-top: 6px
-.mt15
-  margin-top: 15px
-.mt30
-  margin-top: 30px
-.mb15
-  margin-bottom: 15px
-.mb20
-  margin-bottom: 20px
-.mb30
-  margin-bottom: 30px
-.mb40
-  margin-bottom: 40px
+@each $i in 6, 15, 30
+  .mt#{$i}
+    margin-top: #{$i}px
 
-@media screen and (min-width: 768px)
+@each $i in 15, 20, 30, 40
+  .mb#{$i}
+    margin-bottom: #{$i}px
+
+@media screen and (min-width: $screen-sm)
   .pr0
     padding-right: 0
 
 .mobile-minus
-  @media screen and (max-width: 768px)    
+  @media screen and (max-width: $screen-sm)    
     margin-right: -15px
     margin-left: -15px
 
@@ -48,7 +41,7 @@ body
     font:
       weight: $weight-bold      
       size: $slogan-size-center-min
-  @media screen and (min-width: $large-size)
+  @media screen and (min-width: $screen-md)
     top: 0px
     height: 500px
     h1
@@ -64,7 +57,7 @@ body
   margin-top: 162px
   label
     font-weight: 400
-  @media screen and (min-width: $large-size)
+  @media screen and (min-width: $screen-md)
     margin-top: 230px
     margin-bottom: 200px
     background-color: transparent
@@ -207,7 +200,7 @@ body
     font-weight: $weight-normal
   input, select
     border: none
-  @media screen and (min-width: 768px)
+  @media screen and (min-width: $screen-sm)
     padding: 20px 30px 15px 30px
     margin-top: 30px
     @include border-top-radius(4px)    
@@ -230,7 +223,7 @@ body
 
 .base-block
   padding-top: 30px
-  @media screen and (min-width: 768px)
+  @media screen and (min-width: $screen-sm)
     padding: 80px 0 50px 0
 
 
@@ -239,11 +232,11 @@ body
 
 .transfer-page .transfer,
 .meat-page .meat
-  @media screen and (min-width: 768px)
+  @media screen and (min-width: $screen-sm)
     height: 450px
   p
     padding-top: 20px
-    @media screen and (min-width: 768px)
+    @media screen and (min-width: $screen-sm)
       font-size: 36px
       padding: 100px 0 20px 0
 
